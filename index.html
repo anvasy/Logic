@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Lab 1</title>
+    <script src="logic.js"></script>
+    <script src="neutral.js"></script>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="masthead">
+        <div class="container">
+            <div class="row" style="height: 50px;"></div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="no-gutter row">
+            <div class="col-md-12" id="content">
+                <div class="panel">
+                    <div class="panel-heading" style="background-color:#111;color:#fff;height: 50px"></div>
+                    <div class="panel-body">
+                        <input id="probablySKNF" />
+                        <select id="chooseIfSKNF" class="selectpicker">
+                            <option value="0">Не СКНФ</option>
+                            <option value="1">СКНФ</option>
+                        </select> 
+                        <button class="btn btn-block" onclick="conjuction()">ПРОВЕРИТЬ НА СКНФ</button>
+                        <hr>
+                        <input id="probablyNeutral" />
+                        <select id="chooseIfNeutral" class="selectpicker">
+                            <option value="1">Нейтральная</option>
+                            <option value="0">Не нейтральная</option>
+                        </select> 
+                        <button class="btn btn-block" onclick="neutral()">ПРОВЕРИТЬ НА НЕЙТРАЛЬНОСТЬ</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="col-md-12 text-right">
+                <h5>Copyright © 2019 Ann Vasilyeva</h5>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
